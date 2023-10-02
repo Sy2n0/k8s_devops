@@ -1,5 +1,5 @@
-FROM ubuntu:18.04
-MAINTAINER Gyunny <wjdrbs966@naver.com>
+FROM ubuntu:20.04
+MAINTAINER Jiyong <20232231@bu.ac.kr>
 
 RUN apt-get update
 RUN apt-get install -y apache2 
