@@ -1,6 +1,9 @@
-FROM python:3.7
+FROM ubuntu:18.04
+MAINTAINER Gyunny <wjdrbs966@naver.com>
 
-RUN mkdir /echo
-COPY server.py /echo
+RUN apt-get update
+RUN apt-get install -y apache2 
 
-CMD ["python", "/echo/server.py"]
+EXPOSE 80
+
+CMD ["apachectl", "-D", "FOREGROUND"]
